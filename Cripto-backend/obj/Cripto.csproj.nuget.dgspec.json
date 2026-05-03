@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Cripto\\Cripto.csproj": {}
+    "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Proiect-Cripto\\Cripto-backend\\Cripto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Cripto\\Cripto.csproj": {
+    "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Proiect-Cripto\\Cripto-backend\\Cripto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Cripto\\Cripto.csproj",
+        "projectUniqueName": "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Proiect-Cripto\\Cripto-backend\\Cripto.csproj",
         "projectName": "Cripto",
-        "projectPath": "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Cripto\\Cripto.csproj",
+        "projectPath": "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Proiect-Cripto\\Cripto-backend\\Cripto.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Cripto\\obj\\",
+        "outputPath": "C:\\Users\\Andrei\\Documents\\CODE\\repos\\Proiect-Cripto\\Cripto-backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

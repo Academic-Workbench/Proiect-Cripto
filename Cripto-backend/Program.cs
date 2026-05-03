@@ -49,6 +49,9 @@ namespace Criptografie
             services.AddScoped<SecuredUserRepository>();
             services.AddScoped<AuthService>();
             services.AddSingleton<EmailService>();
+            services.AddScoped<LoginAttemptService>();
+
+            services.AddMemoryCache();
 
             services.AddCors(options =>
             {

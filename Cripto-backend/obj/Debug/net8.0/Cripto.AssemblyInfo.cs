@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cripto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8c70f9cafc89cbe5a9704a760b01fad5ac8cbda")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cripto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cripto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

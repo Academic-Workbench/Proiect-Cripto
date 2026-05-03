@@ -6,7 +6,7 @@ namespace Cripto.Services
     {
         private readonly IMemoryCache _cache;
         private const int MaxAttempts = 5;
-        private readonly TimeSpan BlockDuration = TimeSpan.FromMinutes(10);
+        private readonly TimeSpan BlockDuration = TimeSpan.FromMinutes(1);
 
         public LoginAttemptService(IMemoryCache cache)
         {

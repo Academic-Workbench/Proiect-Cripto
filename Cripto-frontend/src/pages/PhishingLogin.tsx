@@ -14,7 +14,7 @@ function PhishingLogin() {
     fetch("https://localhost:7024/api/Auth/logphishingemail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, parola: password }),
     })
       .then((response) => {
         if (!response.ok) {

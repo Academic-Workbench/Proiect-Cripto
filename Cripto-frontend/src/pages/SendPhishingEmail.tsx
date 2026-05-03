@@ -3,7 +3,8 @@ import { useState } from "react";
 function SendPhishingEmail() {
   const [email, setEmail] = useState<string>("");
 
-  const sendemail = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
     if (!email) {
       alert("Please enter a recipient email.");
       return;
@@ -33,7 +34,7 @@ function SendPhishingEmail() {
         <h1 className="text-3xl font-bold mb-6 text-center">
           Send Phishing Email
         </h1>
-        <form className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label
               className="block text-gray-700 font-medium mb-2"
@@ -54,7 +55,6 @@ function SendPhishingEmail() {
         <button
           type="submit"
           className="w-full mt-6 px-4 py-2 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition"
-          onClick={sendemail}
         >
           Send Phishing Email
         </button>
